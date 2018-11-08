@@ -11,7 +11,7 @@
   </div>
 
   <button type="submit" class="btn btn-success" (click)="addPerson()" [disabled]="!personform.form.valid">Submit</button>
-  <button type="button" class="btn btn-warning" (click)="personform.reset()">Nollställ</button>
+  <button type="button" class="btn btn-warning" (click)="resetData()">Nollställ</button>
 </form>
 <ul>
 <li *ngFor="let item of personer; let i = index">
